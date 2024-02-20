@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.header div a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.div-container {
+    background-color: steelblue;
+    max-width: 500%;
+    width: 410px;
+    padding-left: 12px;
+    padding-top: 6px;
+    
+    
+    
+    
+    
+}
+input[type="text"], input[type="password"] {
+    display: block;
+    
+}
+#Summit {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    border: 2px solid blue;
+    background-color: blue;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    max-width: 100px;
+    width: 50%;
+    
+}
+#forget-password {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+#checkbox {
+    margin-left: 95px;
+    padding: 10px;
+    
+}
+.div-container label {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#input {
+    padding: 6px;
+    width: 370px;
+    border: 1px blue solid;
+}
+#car {
+    padding: 4px;
+    display: block;
+    width: 200px;
+}

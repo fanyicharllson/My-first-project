@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+}
+figure {
+  display: flex;
+  
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+  .search-container .head {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    
+  
+  }
+  .highlight {
+    background-color: yellow;
+  }
+  
+ 
+  .search-box {
+    border: 2px solid blue;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+    
+    
+    
+  }
+
+  .search-box input[type="text"] {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+    
+  }
+
+  .search-box button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    max-width: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 20%;
+    transition: 0.3s;
+  }
+  .search-box button a {
+    text-decoration: none;
+    color: white;
+    border: none;
+    background-color: blue;
+  }
+
+  .search-box button:hover {
+    transform: scale(1.1);
+  }
+  @media only screen and (max-width: 500px) {
+    .search-container {
+      margin-top: 20px;
+    }
+  }
+  
+
+  /* Style for the search icon */
+  .fa-search {
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  /* images */
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+     margin-top: 50px;
+     overflow: hidden; 
+     margin-left: 17px;
+  }
+  .item img {
+    /* width: 100%; */
+    max-width: 100%;
+    display: block;
+    height: auto;
+    padding: 2px;
+    height: auto;
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out;
+      border: 2px solid transparent;
+    
+  }
+  .item a {
+    width: 120%;
+    height: auto;
+    padding: 2px;
+    
+  }
+   img:hover {
+    border-color: blue;
+   }
+   .carname {
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+    
+    
+   }
+   .carname .searchable {
+    color: color;
+   }
+   .carname a {
+    text-decoration: none;
+    border: 1px solid;
+    color: azure;
+    background-color: blue;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
+ 
+   .item #car {
+    width: 400px;
+    aspect-ratio: auto 410 / 215;
+    height: 210px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    
+   }
+   /* footer */
+   .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   }
+   .footer p{
+    font-size: 22px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+   }

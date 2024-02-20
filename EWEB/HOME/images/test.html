@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image with Text</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <img src="lamborghini2.jpg" alt="Your Image">
+    <div class="text-container">
+      <h1>Heading</h1>
+      <p>Your text goes here.</p>
+    </div>
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Bar</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .search-box {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-box input[type="text"] {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .search-box button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .search-box button:hover {
+    background-color: #45a049;
+  }
+
+  #search-results {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="search-container">
+  <div class="search-box">
+    <input id="search-input" type="text" placeholder="Search...">
+    <button onclick="search()">Search</button>
+  </div>
+</div>
+
+<div id="search-results">
+  <!-- Search results will be displayed here -->
+</div>
+
+<script>
+  function search() {
+    var input = document.getElementById('search-input').value.toLowerCase();
+    var results = document.querySelectorAll('.searchable');
+    var searchResults = [];
+
+    // Loop through each element with the "searchable" class
+    for (var i = 0; i < results.length; i++) {
+      var text = results[i].textContent.toLowerCase();
+      if (text.includes(input)) {
+        searchResults.push(results[i].outerHTML);
+      }
+    }
+
+    // Display search results
+    document.getElementById('search-results').innerHTML = searchResults.join('');
+  }
+</script>
+
+<!-- Example content -->
+<h2 class="searchable">Toyota Camry</h2>
+<p class="searchable">The Toyota Camry is a popular sedan.</p>
+<h2 class="searchable">Honda Accord</h2>
+<p class="searchable">The Honda Accord is known for its reliability.</p>
+
+</body>
+</html>
+
