@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.main-container .form #title {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+    font-family: sans-serif;
+    font-size: 15px;
+
+    
+}
+.search-box {
+    border: 2px solid black;
+    border-radius: 20px;
+    
+}
+/* .icon {
+    position: relative;
+} */
+i {
+padding: 6px;
+}
+/* .icon i::before {
+    font-family: "Font Awesome 5 Free";
+    content: attr(data-tooltip); */
+
+/* i:hover::before {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aqua;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+} */
+
